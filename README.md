@@ -12,7 +12,7 @@ The owner sets the rules: which slots stay with people, and what agents may comm
 
 Built in one day for the HBS × MIT Hackathon (October 24, 2026) by Amaia Aguilar and Ashwini Krishnamurthy. **4th place.**
 
-**Live demo:** https://firsthand.replit.app · open it and press `A` (agent), `H` (person) or `S` (bot). Or call **(857) 228-9369**.
+**Live demo:** https://firsthand.replit.app · open it and press `A` (agent), `H` (person) or `S` (bot). Demo phone line available on request.
 
 ## What's in the demo
 
@@ -52,7 +52,7 @@ Without funds, payments run as clearly labelled simulations, so the demo never g
 |---|---|
 | `CALLER_PRIVATE_KEY`, `BUSINESS_PRIVATE_KEY`, `BUSINESS_ADDRESS` | Testnet wallets from `npm run wallets`. Never put real funds here. |
 | `VAPI_WEBHOOK_SECRET` | Required for the phone line. `npm run phone` creates it; copy the same value here. Without it the phone webhook stays off |
-| `VAPI_PHONE_NUMBER` | Optional: shown on the stage, for example `+18575550100` |
+| `VAPI_PHONE_NUMBER` | Optional: shown publicly on the stage and in `/api/config`, for example `+18575550100`. Leave it unset to keep the number private |
 | `SHOW_TRANSCRIPTS` | Optional, default off. `true` shows what phone callers say on the public screen |
 | `MCP_TOKEN` | Optional: require `Authorization: Bearer <token>` on `/mcp` |
 | `ANTHROPIC_API_KEY` or `GEMINI_API_KEY` | Optional: an LLM writes the in-browser assistant's replies; otherwise they're scripted |
